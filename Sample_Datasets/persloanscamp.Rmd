@@ -1,0 +1,332 @@
+---
+title: "Personal Loan Campaign using Logistic Regression"
+output:
+  word_document: default
+  html_notebook: default
+---
+
+
+## Setting working directory and reading the csv file
+```{r}
+setwd("F:/DataScience/BLOG/LogRegproject1")
+
+loanorg <- read.csv("PLXSELL.csv")
+```
+
+
+#View the dataset
+```{r}
+View (loanorg)
+dim(loanorg)
+str(loanorg)
+names(loanorg)
+
+
+```
+
+#dataset clean up and preparation
+```{r}
+##remove unwanted columns CUST_ID and random
+loancamp <- loanorg[,-c(1,40)]
+#str(loancamp)
+
+## remove columns AGE_BKT (similar column 'AGE' is available) and ACC_OP_DATE ##(similar column 'LEN_OF_RLTN_IN_MNTH' is available )
+
+loancamp$AGE_BKT <- NULL
+loancamp$ACC_OP_DATE <- NULL
+
+
+## Convert variables into correct datatypes (FLG_HAS_CC, FLG_HAS_ANY_CHGS, FLG_HAS_NOMINEE, FLG_HAS_OLD_LOAN, TARGET should be categorical)
+
+loancamp$TARGET <- as.factor(loancamp$TARGET)
+loancamp$FLG_HAS_CC <- as.factor(loancamp$FLG_HAS_CC)
+loancamp$FLG_HAS_ANY_CHGS <- as.factor(loancamp$FLG_HAS_ANY_CHGS)
+loancamp$FLG_HAS_NOMINEE <- as.factor(loancamp$FLG_HAS_NOMINEE)
+loancamp$FLG_HAS_OLD_LOAN <- as.factor(loancamp$FLG_HAS_OLD_LOAN)
+str(loancamp)
+
+## check for missing values
+colSums(is.na(loancamp))
+
+#write.csv(loancamp,"loancamp.csv")
+```
+
+##Calculate baseline conversion rate
+```{r}
+respons_rate <- round(prop.table(table(loancamp$TARGET)),2)
+respons_rate
+```
+
+## Data visualization using EDA (Univariates)
+
+## EDA - histogram plot for important numeric variables
+```{r}
+library(ggplot2)
+library(cowplot)
+
+ggp1 = ggplot(data = loancamp, aes(x = AGE))+
+      geom_histogram(fill = "lightblue", binwidth = 5, colour = "black")+
+      geom_vline(aes(xintercept = median(AGE)), linetype = "dashed")
+
+ggp2 = ggplot(data = loancamp, aes(x = HOLDING_PERIOD))+
+      geom_histogram(fill = "lightgreen", binwidth = 5, colour = "black")+
+      geom_vline(aes(xintercept = median(HOLDING_PERIOD)), linetype = "dashed")
+
+ggp3 = ggplot(data = loancamp, aes(x = LEN_OF_RLTN_IN_MNTH))+
+      geom_histogram(fill = "lightpink", binwidth = 5, colour = "black")+
+      geom_vline(aes(xintercept = median(LEN_OF_RLTN_IN_MNTH)), linetype = "dashed")
+
+ggp4 = ggplot(data = loancamp, aes(x = NO_OF_L_CR_TXNS))+
+      geom_histogram(fill = "lightgray", binwidth = 5, colour = "black")+
+      geom_vline(aes(xintercept = median(NO_OF_L_CR_TXNS)), linetype = "dashed")
+
+ggp5 = ggplot(data = loancamp, aes(x = NO_OF_L_DR_TXNS))+
+      geom_histogram(fill = "lightyellow", binwidth = 5, colour = "black")+
+      geom_vline(aes(xintercept = median(NO_OF_L_DR_TXNS)), linetype = "dashed")
+
+plot_grid(ggp1, ggp2, ggp3, ggp4, ggp5, labels = "AUTO")
+
+```
+
+## EDA - bar plot for important numeric variables
+```{r}
+
+ggb1 = ggplot(data = loancamp, aes(y = AGE))+geom_boxplot(fill = "lightblue")
+ggb2 = ggplot(data = loancamp, aes(y = HOLDING_PERIOD))+geom_boxplot(fill = "lightgreen")
+ggb3 = ggplot(data = loancamp, aes(y = LEN_OF_RLTN_IN_MNTH))+geom_boxplot(fill = "lightpink")
+ggb4 = ggplot(data = loancamp, aes(y = NO_OF_L_CR_TXNS))+geom_boxplot(fill = "lightgray")
+ggb5 = ggplot(data = loancamp, aes(y = NO_OF_L_DR_TXNS))+geom_boxplot(fill = "lightyellow")
+
+plot_grid(ggb1, ggb2, ggb3, ggb4, ggb5, labels = "AUTO")
+
+
+```
+
+
+##barplot for important categorical variables
+```{r}
+
+ggc1 = ggplot(data = loancamp, aes(x = GENDER))+geom_bar(stat = "count", width = 0.7, fill = "steelblue")
+ggc2 = ggplot(data = loancamp, aes(x = OCCUPATION))+geom_bar(stat = "count", width = 0.7, fill = "steelblue")
+ggc3 = ggplot(data = loancamp, aes(x = FLG_HAS_CC))+geom_bar(stat = "count", width = 0.7, fill = "steelblue")
+ggc4 = ggplot(data = loancamp, aes(x = FLG_HAS_OLD_LOAN))+geom_bar(stat = "count", width = 0.7, fill = "steelblue")
+plot_grid(ggc1, ggc2, ggc3, ggc4, labels = "AUTO")
+
+
+```
+
+# Bivariate analysis
+## Box plot for  important numberic x variables vs TARGET
+```{r}
+#Age vs Target, LEN_OF_RLTN_IN_MNTH vs TARGET, HOLDING_PERIOD vs TARGET
+ggbi1 = ggplot(data = loancamp, aes(x = TARGET, y = AGE, fill = TARGET))+geom_boxplot()
+ggbi2 = ggplot(data = loancamp, aes(x = TARGET, y = LEN_OF_RLTN_IN_MNTH, fill = TARGET))+geom_boxplot()
+ggbi3 = ggplot(data = loancamp, aes(x = TARGET, y = HOLDING_PERIOD, fill = TARGET))+geom_boxplot()
+plot_grid(ggbi1, ggbi2, ggbi3, labels = "AUTO")
+
+
+```
+
+
+
+```{r}
+str(loancamp)
+```
+
+
+##stacked barplot for important categorical x variables vs TARGET
+```{r}
+## GENDER, OCCUPATION, ACC_TYPE, FLG_HAS_CC, FLG_HAS_ANY_CHGS, ##FLG_HAS_OLD_LOAN
+
+
+ggcd1 = ggplot(data = loancamp, aes(x = GENDER, y = as.numeric(TARGET),  fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd1
+
+ggcd2 = ggplot(data = loancamp, aes(x = OCCUPATION, y = as.numeric(TARGET), fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd2 + theme(legend.position = "none")
+
+ggcd3 = ggplot(data = loancamp, aes(x = ACC_TYPE, y = as.numeric(TARGET), fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd3 + theme(legend.position = "none")
+
+ggcd4 = ggplot(data = loancamp, aes(x = FLG_HAS_CC, y = as.numeric(TARGET), fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd4 + theme(legend.position = "none")
+
+ggcd5 = ggplot(data = loancamp, aes(x = FLG_HAS_ANY_CHGS, y = as.numeric(TARGET), fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd5 + theme(legend.position = "none")
+
+
+ggcd6 = ggplot(data = loancamp, aes(x = FLG_HAS_OLD_LOAN, y = as.numeric(TARGET), fill = TARGET)) + geom_bar(stat = "identity", position = "fill")
+ggcd6 + theme(legend.position = "none")
+
+
+plot_grid(ggcd1, ggcd2, ggcd3, ggcd4, ggcd5, ggcd6)+ theme(legend.position = "best")
+
+
+```
+
+
+
+
+#split dataset into development (train) and holdout (validation) sets
+```{r}
+library(caTools)
+
+set.seed(123)
+
+split = sample.split(loancamp$TARGET, SplitRatio = 0.7)
+devdata = subset(loancamp, split == TRUE)
+holddata = subset(loancamp, split == FALSE)
+
+## Check if distribution of partition data is correct for the develmnt dataset
+prop.table(table(devdata$TARGET))
+prop.table(table(holddata$TARGET))
+
+dim(devdata)
+dim(holddata)
+names(devdata)
+```
+
+
+
+#Build the Logistic Regression Model
+```{r}
+library(glmnet)
+devdataorg = devdata
+holddataorg = holddata
+names(devdataorg)
+
+#Remove NO_OF_CHQ_DR_TXNS and AMT_L_DR as they show no value in Log Reg output
+devdata = devdata[-c(17,24)]
+holddata = holddata[-c(17,24)]
+colnames(devdata)
+colnames(holddata)
+logreg = glm(TARGET ~., data=devdata, family="binomial")
+summary(logreg)
+```
+
+
+
+#McFadden or psuedo R2 interpretation
+```{r}
+#install.packages("pscl")
+library(pscl)
+
+pR2(logreg)
+```
+
+#Check for VIF
+```{r}
+library(car)
+vif(logreg)
+```
+
+
+
+#based on VIF results, remove x variables with VIF above 4 in the
+#datasets (NO_OF_L_DR_TXNS, AMT_MOB_DR, AVG_AMT_PER_MOB_TXN, NO_OF_L_CR_TXNS, #NO_OF_ATM_DR_TXNS)
+```{r}
+names(devdata)
+devdata1 = devdata[,-c(11, 22, 32, 10, 14)]
+
+names(holddata)
+holddata1 = holddata[,-c(11, 22, 32, 10, 14)]
+names(devdata1)
+names(holddata1)
+```
+
+#Build the Logistic Regression Model
+```{r}
+logreg1 = glm(TARGET ~., data=devdata1, family="binomial")
+#summary(logreg1)
+```
+
+#check for VIF again
+```{r}
+vif(logreg1)
+```
+
+
+# test overall significance of the model
+
+```{r}
+#install.packages("lmtest")
+library(lmtest)
+
+lrtest(logreg1)
+```
+
+
+```{r}
+library(pscl)
+pR2(logreg1)
+```
+
+#individual coeff significance check
+```{r}
+summary(logreg1)
+```
+
+
+##predict for train dataset
+```{r}
+devdata1.predict.score=predict(logreg1,newdata = devdata1, type="response")
+
+## Assgining 0 / 1 class based on certain threshold
+devdata1$Class = ifelse(devdata1.predict.score>0.10,1,0)
+
+
+## Creating the confusion matrix
+tabdev=with(devdata1, table(TARGET,Class))
+
+tabdev
+
+```
+
+# calculate accuracy for train dataset
+```{r}
+train_accuracy = round((tabdev[1,1]+tabdev[2,2])/(tabdev[1,1]+tabdev[2,2]+tabdev[2,1]+tabdev[1,2]),2)
+
+train_sensitivity = tabdev[2,2] / (tabdev[2,1]+tabdev[2,2])
+
+specificity = tabdev[1,1]/(tabdev[1,1]+tabdev[1,2])
+
+train_accuracy
+train_sensitivity
+specificity
+```
+
+
+##predict for test dataset
+```{r}
+holddata1.predict.score=predict(logreg1,newdata = holddata1, type="response")
+hist(holddata1.predict.score, main = "Histogram of predicted probabilities")
+```
+
+
+##Predict for the development set
+```{r}
+
+
+## Assgining 0 / 1 class based on certain threshold
+holddata1$Class = ifelse(holddata1.predict.score>0.10,1,0)
+
+
+## Creating the confusion matrix
+tabtest=with(holddata1, table(TARGET,Class))
+
+tabtest
+```
+
+
+```{r}
+test_accuracy = round((tabtest[1,1]+tabtest[2,2])/(tabtest[1,1]+tabtest[2,2]+tabtest[2,1]+tabtest[1,2]),2)
+
+test_sensitivity = tabtest[2,2] / (tabtest[2,1]+tabtest[2,2])
+
+test_specificity = tabtest[1,1]/(tabtest[1,1]+tabtest[1,2])
+
+test_accuracy
+test_sensitivity
+test_specificity
+```
+
