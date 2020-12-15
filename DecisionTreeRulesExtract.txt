@@ -1,0 +1,94 @@
+|--- Holding_Period <= 10.50
+|   |--- Occupation_SELF-EMP <= 0.50
+|   |   |--- No_OF_CR_TXNS <= 22.50
+|   |   |   |--- Holding_Period <= 3.50
+|   |   |   |   |--- SCR <= 692.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- SCR >  692.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Holding_Period >  3.50
+|   |   |   |   |--- Balance <= 6350.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Balance >  6350.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- No_OF_CR_TXNS >  22.50
+|   |   |   |--- Occupation_SENP <= 0.50
+|   |   |   |   |--- Occupation_SAL <= 0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Occupation_SAL >  0.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Occupation_SENP >  0.50
+|   |   |   |   |--- Balance <= 149091.00
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Balance >  149091.00
+|   |   |   |   |   |--- class: 0
+|   |--- Occupation_SELF-EMP >  0.50
+|   |   |--- SCR <= 737.50
+|   |   |   |--- Balance <= 10792.00
+|   |   |   |   |--- No_OF_CR_TXNS <= 11.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- No_OF_CR_TXNS >  11.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Balance >  10792.00
+|   |   |   |   |--- No_OF_CR_TXNS <= 31.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- No_OF_CR_TXNS >  31.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- SCR >  737.50
+|   |   |   |--- Balance <= 35950.00
+|   |   |   |   |--- Age <= 48.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Age >  48.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Balance >  35950.00
+|   |   |   |   |--- No_OF_CR_TXNS <= 21.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- No_OF_CR_TXNS >  21.00
+|   |   |   |   |   |--- class: 1
+|--- Holding_Period >  10.50
+|   |--- No_OF_CR_TXNS <= 20.50
+|   |   |--- Holding_Period <= 17.50
+|   |   |   |--- Occupation_SELF-EMP <= 0.50
+|   |   |   |   |--- Balance <= 237947.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Balance >  237947.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Occupation_SELF-EMP >  0.50
+|   |   |   |   |--- Balance <= 35873.00
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Balance >  35873.00
+|   |   |   |   |   |--- class: 0
+|   |   |--- Holding_Period >  17.50
+|   |   |   |--- Holding_Period <= 21.50
+|   |   |   |   |--- SCR <= 997.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- SCR >  997.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Holding_Period >  21.50
+|   |   |   |   |--- Balance <= 10477.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Balance >  10477.50
+|   |   |   |   |   |--- class: 0
+|   |--- No_OF_CR_TXNS >  20.50
+|   |   |--- Occupation_SENP <= 0.50
+|   |   |   |--- Gender_M <= 0.50
+|   |   |   |   |--- Age <= 24.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |   |--- Age >  24.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |--- Gender_M >  0.50
+|   |   |   |   |--- Holding_Period <= 18.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Holding_Period >  18.50
+|   |   |   |   |   |--- class: 0
+|   |   |--- Occupation_SENP >  0.50
+|   |   |   |--- Holding_Period <= 21.50
+|   |   |   |   |--- Balance <= 23837.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- Balance >  23837.50
+|   |   |   |   |   |--- class: 1
+|   |   |   |--- Holding_Period >  21.50
+|   |   |   |   |--- SCR <= 602.50
+|   |   |   |   |   |--- class: 0
+|   |   |   |   |--- SCR >  602.50
+|   |   |   |   |   |--- class: 0
