@@ -1,0 +1,1800 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20203.20.1018.2303                               -->
+<workbook source-build='2020.3.2 (20203.20.1018.2303)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <_.fcp.SetMembershipControl.true...SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style-theme name='modern' />
+  <style>
+    <_.fcp.MarkAnimation.true...style-rule element='animation'>
+      <format attr='animation-style' value='as-phased' />
+      <format attr='animation-duration' value='0.30000001192092896' />
+      <format attr='animation-on' value='ao-on' />
+    </_.fcp.MarkAnimation.true...style-rule>
+  </style>
+  <datasources>
+    <datasource caption='Model_data (Model_data)' inline='true' name='federated.1nd1gav1t5ojpr1cc97h60369otg' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Model_data' name='excel-direct.1iin7re0jjihzq15jjav20xnzo9h'>
+            <connection class='excel-direct' cleaning='no' compat='no' dataRefreshTime='' filename='F:/IBPA_IIM_FinalProject/Model_data.xlsx' interpretationMode='0' password='' server='' validate='no' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='excel-direct.1iin7re0jjihzq15jjav20xnzo9h' name='Model_data' table='[Model_data$]' type='table'>
+          <columns gridOrigin='A1:H20001:no:A1:H20001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Target' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='real' name='Balance' ordinal='3' />
+            <column datatype='string' name='Occupation' ordinal='4' />
+            <column datatype='integer' name='No_OF_CR_TXNS' ordinal='5' />
+            <column datatype='integer' name='SCR' ordinal='6' />
+            <column datatype='integer' name='Holding_Period' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='excel-direct.1iin7re0jjihzq15jjav20xnzo9h' name='Model_data' table='[Model_data$]' type='table'>
+          <columns gridOrigin='A1:H20001:no:A1:H20001:0' header='yes' outcome='6'>
+            <column datatype='integer' name='Target' ordinal='0' />
+            <column datatype='integer' name='Age' ordinal='1' />
+            <column datatype='string' name='Gender' ordinal='2' />
+            <column datatype='real' name='Balance' ordinal='3' />
+            <column datatype='string' name='Occupation' ordinal='4' />
+            <column datatype='integer' name='No_OF_CR_TXNS' ordinal='5' />
+            <column datatype='integer' name='SCR' ordinal='6' />
+            <column datatype='integer' name='Holding_Period' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='context'>0</attribute>
+              <attribute datatype='string' name='gridOrigin'>&quot;A1:H20001:no:A1:H20001:0&quot;</attribute>
+              <attribute datatype='boolean' name='header'>true</attribute>
+              <attribute datatype='integer' name='outcome'>6</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Target</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Target]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Target</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Age</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Age]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Age</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Gender</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Gender]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Gender</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balance</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balance]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Balance</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <precision>15</precision>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;R8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Occupation</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[Occupation]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Occupation</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='1' name='LEN_RUS_S2' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;WSTR&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>No_OF_CR_TXNS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[No_OF_CR_TXNS]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>No_OF_CR_TXNS</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCR</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SCR]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>SCR</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Holding_Period</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Holding_Period]</local-name>
+            <parent-name>[Model_data]</parent-name>
+            <remote-alias>Holding_Period</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;I8&quot;</attribute>
+            </attributes>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[Model!data_32559EC258C54658933B002585C344CB]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+      <column caption='Holding Period' datatype='integer' name='[Holding_Period]' role='measure' type='quantitative' />
+      <column caption='No OF CR TXNS' datatype='integer' name='[No_OF_CR_TXNS]' role='measure' type='quantitative' />
+      <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+      <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+      </column>
+      <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='Model_data' datatype='table' name='[__tableau_internal_object_id__].[Model!data_32559EC258C54658933B002585C344CB]' role='measure' type='quantitative' />
+      <column-instance column='[Holding_Period]' derivation='Avg' name='[avg:Holding_Period:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Holding_Period]' derivation='Sum' name='[sum:Holding_Period:qk]' pivot='key' type='quantitative' />
+      <group caption='Action (Gender,Occupation)' hidden='true' name='[Action (Gender,Occupation)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Gender]' />
+          <groupfilter function='level-members' level='[Occupation]' />
+        </groupfilter>
+      </group>
+      <group caption='Action (Gender,Occupation,Target (bin))' hidden='true' name='[Action (Gender,Occupation,Target (bin))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Gender]' />
+          <groupfilter function='level-members' level='[Occupation]' />
+          <groupfilter function='level-members' level='[Target (bin)]' />
+        </groupfilter>
+      </group>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Gender:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;F&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;O&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;M&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Occupation:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;PROF&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;SENP&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;SELF-EMP&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;SAL&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Holding_Period:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1nd1gav1t5ojpr1cc97h60369otg].[sum:Holding_Period:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='Model_data' id='Model!data_32559EC258C54658933B002585C344CB'>
+            <properties context=''>
+              <relation connection='excel-direct.1iin7re0jjihzq15jjav20xnzo9h' name='Model_data' table='[Model_data$]' type='table'>
+                <columns gridOrigin='A1:H20001:no:A1:H20001:0' header='yes' outcome='6'>
+                  <column datatype='integer' name='Target' ordinal='0' />
+                  <column datatype='integer' name='Age' ordinal='1' />
+                  <column datatype='string' name='Gender' ordinal='2' />
+                  <column datatype='real' name='Balance' ordinal='3' />
+                  <column datatype='string' name='Occupation' ordinal='4' />
+                  <column datatype='integer' name='No_OF_CR_TXNS' ordinal='5' />
+                  <column datatype='integer' name='SCR' ordinal='6' />
+                  <column datatype='integer' name='Holding_Period' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Age_Occupation_Dash' type='sheet' worksheet='Gender Vs Occupation' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Age_Occupation_Dash' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='SCR_Target_Dash' type='sheet' worksheet='Avg SCR Vs Avg Holding Vs Occupation Vs Target' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='SCR_Target_Dash' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Misc_Dash' type='sheet' worksheet='Occupation Vs No_Credit_Trans' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Misc_Dash' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Avg Age Vs Avg Balance Vs Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Balance]' derivation='Avg' name='[avg:Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk] + [federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Balance:qk])</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{C309C6F4-DE08-4681-9BED-2877CA97B7A0}' />
+    </worksheet>
+    <worksheet name='Avg Age Vs Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='line-interpolation' value='step' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{B00E59DC-CB53-4AA4-B5B9-F0751B8ED112}' />
+    </worksheet>
+    <worksheet name='Avg SCR Vs Avg Balance Vs Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='integer' name='[Age]' role='measure' type='quantitative' />
+            <column datatype='real' name='[Balance]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[Age]' derivation='Avg' name='[avg:Age:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Balance]' derivation='Avg' name='[avg:Balance:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action1]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+              <groupfilter function='level-members' level='[Target (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation)]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Balance:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='2' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='line-interpolation' value='step' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Balance:qk] + ([federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk] + [federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Age:qk]))</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{8ACD5571-3B35-4899-8167-FEBF21645FF5}' />
+    </worksheet>
+    <worksheet name='Avg SCR Vs Avg Holding Vs Occupation Vs Target'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Holding Period' datatype='integer' name='[Holding_Period]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[Holding_Period]' derivation='Avg' name='[avg:Holding_Period:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target (bin)]' derivation='None' name='[none:Target (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Holding_Period:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Gender:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:Gender:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names]' value='89' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='GanttBar' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Multiple Values]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / ([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Target (bin):ok] / ([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names])))</cols>
+      </table>
+      <simple-id uuid='{88E5248D-82E5-467C-BC2B-B559E276A303}' />
+    </worksheet>
+    <worksheet name='Avg SCR Vs Avg No_CR_Transactions Vs Occupation Vs Target'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='No OF CR TXNS' datatype='integer' name='[No_OF_CR_TXNS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[No_OF_CR_TXNS]' derivation='Avg' name='[avg:No_OF_CR_TXNS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target (bin)]' derivation='None' name='[none:Target (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+              <groupfilter function='level-members' level='[Target (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#666666' />
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:No_OF_CR_TXNS:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.92254143953323364' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk] + [federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:No_OF_CR_TXNS:qk])</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk] / ([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Target (bin):ok] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]))</cols>
+      </table>
+      <simple-id uuid='{DB4B7CA4-48C1-4E60-89B1-C62913B75708}' />
+    </worksheet>
+    <worksheet name='Avg SCR Vs Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+              <groupfilter function='level-members' level='[Target (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+              <lod column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.86756908893585205' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{49790283-6F0D-4F66-BC1F-9FFC5499D207}' />
+    </worksheet>
+    <worksheet name='Gender Vs Occupation'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column-instance column='[Occupation]' derivation='Count' name='[cnt:Occupation:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[cnt:Occupation:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.1424309015274048' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[cnt:Occupation:qk]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{DE404B42-7F80-481E-8425-06A034A4C0F1}' />
+    </worksheet>
+    <worksheet name='Occupation Vs Avg HoldingPeriod'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='Holding Period' datatype='integer' name='[Holding_Period]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[Holding_Period]' derivation='Avg' name='[avg:Holding_Period:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action3]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+              <groupfilter function='level-members' level='[Target (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height-header' value='18' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' />
+              <size column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5052486658096313' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:Holding_Period:qk]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</cols>
+      </table>
+      <simple-id uuid='{7287A843-3C6B-423F-B473-FEA7CA527485}' />
+    </worksheet>
+    <worksheet name='Occupation Vs No_Credit_Trans'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column caption='No OF CR TXNS' datatype='integer' name='[No_OF_CR_TXNS]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[No_OF_CR_TXNS]' derivation='Count' name='[cnt:No_OF_CR_TXNS:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target (bin)]' derivation='None' name='[none:Target (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[none:Gender:nk]' member='&quot;F&quot;' />
+              <groupfilter function='member' level='[none:Gender:nk]' member='&quot;M&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' />
+            </encodings>
+            <reference-line axis-column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[cnt:No_OF_CR_TXNS:qk]' boxplot-mark-exclusion='false' boxplot-whisker-type='standard' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-cell' symmetric='false' value-column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[cnt:No_OF_CR_TXNS:qk]' z-order='1' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.25' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1nd1gav1t5ojpr1cc97h60369otg].[cnt:No_OF_CR_TXNS:qk]</rows>
+        <cols>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / ([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Target (bin):ok]))</cols>
+      </table>
+      <simple-id uuid='{48F76A1D-BD4B-4079-AC48-4A9F8C059137}' />
+    </worksheet>
+    <worksheet name='Target Vs Occupation Vs Avg SCR '>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Model_data (Model_data)' name='federated.1nd1gav1t5ojpr1cc97h60369otg' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1nd1gav1t5ojpr1cc97h60369otg'>
+            <column datatype='string' name='[Gender]' role='dimension' type='nominal' />
+            <column datatype='string' name='[Occupation]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[SCR]' role='measure' type='quantitative' />
+            <column aggregation='None' caption='Target (bin)' datatype='integer' name='[Target (bin)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='0' formula='[Target]' peg='0' size='1' />
+            </column>
+            <column datatype='integer' name='[Target]' role='measure' type='quantitative' />
+            <column-instance column='[SCR]' derivation='Avg' name='[avg:SCR:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Gender]' derivation='None' name='[none:Gender:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Occupation]' derivation='None' name='[none:Occupation:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Target (bin)]' derivation='None' name='[none:Target (bin):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]'>
+            <groupfilter function='crossjoin' user:ui-action-filter='[Action2]' user:ui-enumeration='all' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[Gender]' />
+              <groupfilter function='level-members' level='[Occupation]' />
+              <groupfilter function='level-members' level='[Target (bin)]' />
+            </groupfilter>
+          </filter>
+          <filter class='categorical' column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]'>
+            <groupfilter function='level-members' level='[none:Gender:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]</column>
+            <column>[federated.1nd1gav1t5ojpr1cc97h60369otg].[Action (Gender,Occupation,Target (bin))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' />
+              <text column='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk] / [federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk])</rows>
+        <cols>[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Target (bin):ok]</cols>
+      </table>
+      <simple-id uuid='{5F23382E-1991-4338-B293-2F7D7B772821}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Age_Occupation_Dash'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='99' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='100' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='13' param='horz' w='98828' x='586' y='5600'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='10' param='horz' w='98828' x='586' y='5600'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='7' param='horz' w='98828' x='586' y='5600'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93358' id='5' w='98828' x='586' y='5600'>
+                    <zone h='93358' id='3' name='Gender Vs Occupation' w='49413' x='586' y='5600'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46679' id='11' name='Avg Age Vs Occupation' w='49415' x='49999' y='5600'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46679' id='15' name='Avg Age Vs Avg Balance Vs Occupation' w='49415' x='49999' y='52279'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='110' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='109' param='vert' w='98828' x='586' y='1042'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='100' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93358' id='3' is-fixed='true' name='Gender Vs Occupation' w='49413' x='586' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46679' id='11' is-fixed='true' name='Avg Age Vs Occupation' w='49415' x='49999' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46679' id='15' is-fixed='true' name='Avg Age Vs Avg Balance Vs Occupation' w='49415' x='49999' y='52279'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A6072C7B-D1B8-421C-9DF7-E6300E6AA7B0}' />
+    </dashboard>
+    <dashboard name='Misc_Dash'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='79' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='80' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='67' param='horz' w='98828' x='586' y='5600'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='10' param='horz' w='98828' x='586' y='5600'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='7' param='horz' w='98828' x='586' y='5600'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93358' id='5' w='98828' x='586' y='5600'>
+                    <zone h='93358' id='3' name='Occupation Vs No_Credit_Trans' w='49413' x='586' y='5600'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46679' id='8' name='Occupation Vs Avg HoldingPeriod' w='49415' x='49999' y='5600'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                    <zone h='46679' id='65' name='Avg SCR Vs Avg Balance Vs Occupation' w='49415' x='49999' y='52279'>
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='4' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='90' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='89' param='vert' w='98828' x='586' y='1042'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='80' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='93358' id='3' is-fixed='true' name='Occupation Vs No_Credit_Trans' w='49413' x='586' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46679' id='8' is-fixed='true' name='Occupation Vs Avg HoldingPeriod' w='49415' x='49999' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='46679' id='65' is-fixed='true' name='Avg SCR Vs Avg Balance Vs Occupation' w='49415' x='49999' y='52279'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{499F2EB3-5517-40F1-BCA1-0D221528B355}' />
+    </dashboard>
+    <dashboard name='SCR_Target_Dash'>
+      <style />
+      <size maxheight='768' maxwidth='1366' minheight='768' minwidth='1366' preset-index='0' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='4' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='102' param='vert' w='98828' x='586' y='1042'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='103' w='98828' x='586' y='1042'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='29' param='horz' w='98828' x='586' y='5600'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='18' param='horz' w='98828' x='586' y='5600'>
+                <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='13' param='horz' w='98828' x='586' y='5600'>
+                  <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='10' param='horz' w='98828' x='586' y='5600'>
+                    <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='93358' id='7' param='horz' w='98828' x='586' y='5600'>
+                      <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='93358' id='5' w='98828' x='586' y='5600'>
+                        <zone h='58471' id='8' name='Avg SCR Vs Avg No_CR_Transactions Vs Occupation Vs Target' w='49415' x='49999' y='5600'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='34887' id='11' name='Target Vs Occupation Vs Avg SCR ' w='49415' x='49999' y='64071'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='36996' id='16' name='Avg SCR Vs Occupation' w='49413' x='586' y='61962'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                        <zone h='56362' id='27' name='Avg SCR Vs Avg Holding Vs Occupation Vs Target' w='49413' x='586' y='5600'>
+                          <zone-style>
+                            <format attr='border-color' value='#000000' />
+                            <format attr='border-style' value='none' />
+                            <format attr='border-width' value='0' />
+                            <format attr='margin' value='4' />
+                          </zone-style>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1200' minheight='1200' sizing-mode='vscroll' />
+          <zones>
+            <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='113' w='100000' x='0' y='0'>
+              <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='97916' id='112' param='vert' w='98828' x='586' y='1042'>
+                <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='4558' id='103' w='98828' x='586' y='1042'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='56362' id='27' is-fixed='true' name='Avg SCR Vs Avg Holding Vs Occupation Vs Target' w='49413' x='586' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='58471' id='8' is-fixed='true' name='Avg SCR Vs Avg No_CR_Transactions Vs Occupation Vs Target' w='49415' x='49999' y='5600'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='276' h='36996' id='16' is-fixed='true' name='Avg SCR Vs Occupation' w='49413' x='586' y='61962'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='260' h='34887' id='11' is-fixed='true' name='Target Vs Occupation Vs Avg SCR ' w='49415' x='49999' y='64071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{D5267B50-0409-4CDF-B05D-C85B35AF08BE}' />
+    </dashboard>
+    <dashboard name='Story 1' type='storyboard'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f0eae8c4' />
+        </style-rule>
+        <style-rule element='story-title'>
+          <format attr='text-align' value='left' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1600' minheight='900' minwidth='1600' preset-index='8' sizing-mode='fixed' />
+      <zones>
+        <zone _.fcp.SetMembershipControl.false...type='layout-basic' _.fcp.SetMembershipControl.true...type-v2='layout-basic' h='100000' id='2' w='100000' x='0' y='0'>
+          <zone _.fcp.SetMembershipControl.false...type='layout-flow' _.fcp.SetMembershipControl.true...type-v2='layout-flow' h='98222' id='1' param='vert' removable='false' w='99000' x='500' y='889'>
+            <zone _.fcp.SetMembershipControl.false...type='title' _.fcp.SetMembershipControl.true...type-v2='title' h='3444' id='3' w='99000' x='500' y='889' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard-nav' _.fcp.SetMembershipControl.true...type-v2='flipboard-nav' h='11222' id='4' is-fixed='true' paired-zone-id='5' removable='false' w='99000' x='500' y='4333' />
+            <zone _.fcp.SetMembershipControl.false...type='flipboard' _.fcp.SetMembershipControl.true...type-v2='flipboard' h='83556' id='5' paired-zone-id='4' removable='false' w='99000' x='500' y='15555'>
+              <flipboard active-id='1' nav-type='caption' show-nav-arrows='true'>
+                <story-points>
+                  <story-point caption='Occupational Insights' captured-sheet='Age_Occupation_Dash' id='1' />
+                  <story-point caption='SCR-Loan Insights' captured-sheet='SCR_Target_Dash' id='2' />
+                  <story-point caption='Credit-SCR-Loan Insights' captured-sheet='Misc_Dash' id='3' />
+                </story-points>
+              </flipboard>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone _.fcp.SetMembershipControl.false...type='text' _.fcp.SetMembershipControl.true...type-v2='text' flipboard-zone-id='5' forceUpdate='true' h='11000' id='6' story-point-id='1' w='32438' x='65875' y='1889' />
+      </zones>
+      <simple-id uuid='{247D7AFA-AC33-4B10-BEDA-BD8D45EC3973}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='48'>
+    <window class='worksheet' maximized='true' name='Gender Vs Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='200'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0181F1C7-8EC1-481F-A328-C53454A9B6F7}' />
+    </window>
+    <window class='worksheet' name='Occupation Vs No_Credit_Trans'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5A09C393-69CF-4864-8F17-EE8696A891E0}' />
+    </window>
+    <window class='worksheet' name='Occupation Vs Avg HoldingPeriod'>
+      <cards>
+        <edge name='left'>
+          <strip size='200'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' type='size' />
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A4ACFF24-0607-4613-9820-38B6F564119A}' />
+    </window>
+    <window class='worksheet' name='Avg SCR Vs Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D883D984-BF69-4E3F-AA10-67ED1DA02DFA}' />
+    </window>
+    <window class='worksheet' name='Avg Age Vs Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{99EB2736-8BC3-49FD-A127-D710457D2E7F}' />
+    </window>
+    <window class='worksheet' name='Avg Age Vs Avg Balance Vs Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{95FC97D0-227E-4988-882A-1250317C07F0}' />
+    </window>
+    <window class='worksheet' name='Avg SCR Vs Avg Balance Vs Occupation'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Occupation:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C4552768-0BCB-4FC9-93DA-46498D95BA96}' />
+    </window>
+    <window class='worksheet' name='Target Vs Occupation Vs Avg SCR '>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[avg:SCR:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C7E86206-1D1D-4349-BFF2-261A356D55CC}' />
+    </window>
+    <window class='worksheet' name='Avg SCR Vs Avg Holding Vs Occupation Vs Target'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{ACC956B3-4033-4D29-B2AB-479DDBBBFFAE}' />
+    </window>
+    <window class='worksheet' name='Avg SCR Vs Avg No_CR_Transactions Vs Occupation Vs Target'>
+      <cards>
+        <edge name='left'>
+          <strip size='201'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='38'>
+            <card type='columns' />
+          </strip>
+          <strip size='38'>
+            <card type='rows' />
+          </strip>
+          <strip size='38'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='2' param='[federated.1nd1gav1t5ojpr1cc97h60369otg].[none:Gender:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C4B48ACA-F61D-4C8C-8193-11EDABE4C382}' />
+    </window>
+    <window class='dashboard' name='Age_Occupation_Dash'>
+      <viewpoints>
+        <viewpoint name='Avg Age Vs Avg Balance Vs Occupation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg Age Vs Occupation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Gender Vs Occupation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{FEE048EF-79F5-4DAF-A36D-87902147626C}' />
+    </window>
+    <window class='dashboard' name='SCR_Target_Dash'>
+      <viewpoints>
+        <viewpoint name='Avg SCR Vs Avg Holding Vs Occupation Vs Target'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg SCR Vs Avg No_CR_Transactions Vs Occupation Vs Target'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Avg SCR Vs Occupation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Target Vs Occupation Vs Avg SCR '>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='27' />
+      <simple-id uuid='{A878BFBB-77D7-4F1F-AA06-093A9676FF08}' />
+    </window>
+    <window class='dashboard' name='Misc_Dash'>
+      <viewpoints>
+        <viewpoint name='Avg SCR Vs Avg Balance Vs Occupation'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Occupation Vs Avg HoldingPeriod'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Occupation Vs No_Credit_Trans'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{FE18103C-3095-4B03-8F94-6F4EB744E73F}' />
+    </window>
+    <window class='dashboard' name='Story 1'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{2887542D-0920-47B2-80C2-C0F7B5D57E42}' />
+    </window>
+  </windows>
+</workbook>
